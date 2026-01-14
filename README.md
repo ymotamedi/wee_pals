@@ -4,6 +4,8 @@ This Python file takes Wee Pals word doc submissions, converts each individually
 
 ## Dependencies
 
+* Python 3
+
 Non-standard Python libraries you will need:
 * python-docx
 * PyPDF2
