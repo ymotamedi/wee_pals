@@ -2,6 +2,13 @@
 
 This Python file takes Wee Pals word doc submissions, converts each individually to a PDF file and then compiles all the pdfs into one document.
 
+## Dependencies
+
+Non-standard Python libraries you will need:
+* python-docx
+* PyPDF2
+* docx2pdf
+  
 ## How to use
 
 1. Download the .py file
