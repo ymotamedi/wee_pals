@@ -1,6 +1,6 @@
 # Wee pals compiler
 
-This Python file takes Wee Pals word doc submissions, converts each individually to a PDF file and then compiles all the pdfs into one document.
+This Python file takes Wee Pals word document submissions, converts each individually to a PDF file and then compiles all the pdfs into one document.
 
 ## Dependencies
 
