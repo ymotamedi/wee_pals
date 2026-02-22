@@ -11,7 +11,7 @@ import os
 def convert_docx_to_pdf(file):
 
     '''
-    Convert word file (.docx) to pdf
+    Convert a word file (.docx) to pdf
     Takes in file name
 
     '''
@@ -67,7 +67,7 @@ def compile_pdfs(pdf_folder, year, pdict=None):
         merger.append(open(pdf, 'rb'))
 
     # write all pdfs into one file
-    with open('../wee_pals_' + year + '/wee_pals_all_' + year + '.pdf', 'wb') as outPdf:
+    with open('../'+ project_name + '_' + year + '/' + project_name + '_all_' + year + '.pdf', 'wb') as outPdf:
         merger.write(outPdf)
         outPdf.close()
 
@@ -87,9 +87,13 @@ if __name__ == '__main__':
     # converts year to str
     year = str(args.year)
 
+    project_name = input('What is your project called? ')
+    project_name = project_name.lower().replace(" ", "_")
+    print(project_name)
+
     # gets folders for word and pdf docs
-    wordFolder = '../wee_pals_' + year + '/word_docs'
-    pdfFolder = '../wee_pals_' + year + '/pdfs'
+    wordFolder = '../'+ project_name + '_' + year + '/word_docs'
+    pdfFolder = '../'+ project_name + '_' + year + '/pdfs'
 
     # if include the optional function argument
     if args.func:
